@@ -10,16 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="some-json")
 public class ExampleController {
 
-//    @Autowired
-//    private ExampleObject exampleObject;
-
     @RequestMapping(method = RequestMethod.GET)
     public ExampleObject getExample() {
-        ExampleObject exampleObject = new ExampleObject();
-        exampleObject.setId("1");
-        exampleObject.setOrganisation("cats");
-        exampleObject.setPrice("£1");
-        return exampleObject;
+        return new ExampleObject()
+                .withId("1")
+                .withOrganisation("foo")
+                .withPrice("£1");
     }
 
 
