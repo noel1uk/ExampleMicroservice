@@ -1,11 +1,9 @@
 package com.intro.returnjson.controllers;
 
-import com.intro.returnjson.Config.ServiceConfig;
+import com.intro.returnjson.config.ServiceConfig;
 import com.intro.returnjson.model.Example;
-import com.intro.returnjson.model.ExampleObject;
 import com.intro.returnjson.services.ExampleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

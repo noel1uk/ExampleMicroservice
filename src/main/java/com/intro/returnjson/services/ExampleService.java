@@ -1,6 +1,6 @@
 package com.intro.returnjson.services;
 
-import com.intro.returnjson.Config.ServiceConfig;
+import com.intro.returnjson.config.ServiceConfig;
 import com.intro.returnjson.model.Example;
 import com.intro.returnjson.repository.ExampleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
